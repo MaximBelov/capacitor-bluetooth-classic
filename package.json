@@ -1,6 +1,6 @@
 {
   "name": "capacitor-bluetooth-classic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bluetooth Classic serial connections for Capacitor apps: RFCOMM on Android, External Accessory on iOS",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
