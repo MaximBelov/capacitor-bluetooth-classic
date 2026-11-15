@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bluetooth Classic</title>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 16px; padding-top: env(safe-area-inset-top); }
+      label, input, select, button { display: block; margin: 6px 0; font-size: 16px; }
+      pre { white-space: pre-wrap; font-size: 13px; background: #f3f3f3; padding: 8px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Bluetooth Classic</h1>
+      <p>
+        Lists and finds devices, connects to one, and shows what it sends. On Android a device is its MAC address and the
+        serial port profile; on iOS it is an accessory whose protocol the app declares in its Info.plist.
+      </p>
+      <button id="permissions">Request permissions</button>
+      <button id="enabled">Is Bluetooth on?</button>
+      <button id="list">List devices</button>
+      <button id="discover">Find devices</button>
+      <label for="device">Device</label>
+      <select id="device"></select>
+      <label for="delimiter">Delimiter</label>
+      <input id="delimiter" value="\n" />
+      <button id="connect">Connect and subscribe</button>
+      <label for="command">Command</label>
+      <input id="command" value="" />
+      <button id="write">Write</button>
+      <button id="disconnect">Disconnect</button>
+      <pre id="log"></pre>
+    </main>
+    <script src="./js/example.js" type="module"></script>
+  </body>
+</html>
